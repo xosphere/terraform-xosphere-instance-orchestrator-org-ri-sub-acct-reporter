@@ -35,7 +35,9 @@ resource "aws_iam_role_policy" "xosphere_organization_ri_sub_account_reporter_ro
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "ec2:DescribeReservedInstances"
+        "ec2:DescribeReservedInstances",
+        "savingsplans:DescribeSavingsPlans",
+        "savingsplans:DescribeSavingsPlanRates"
 	    ],
       "Resource": "*"
     }
